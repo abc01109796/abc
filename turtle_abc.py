@@ -1,0 +1,38 @@
+from turtle import *
+screen = Screen()
+screen.setup(1.0, 1.0)
+
+ht()
+
+a = Turtle()
+a.color("red")
+a.pensize(10)
+a.penup()
+a.setpos(-200, 100)
+a.pendown()
+a.left(90)
+a.circle(30)
+a.backward(30)
+a.ht()
+
+b = Turtle()
+b.color("blue")
+b.pensize(10)
+b.penup()
+b.setpos(-120,100)
+b.pendown()
+b.left(90)
+b.circle(30,540)
+b.backward(90)
+b.forward(120)
+
+c = Turtle()
+c.color("white")
+c.pensize(10)
+c.setpos(-40, 100)
+c.left(90)
+c.circle(30, 30)
+c.color("gold")
+c.circle(30,300)
+
+screen.mainloop()
