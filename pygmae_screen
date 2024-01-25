@@ -1,0 +1,19 @@
+import pygame
+
+pygame.init()
+pygame.display.set_caption("abc")
+screen = pygame.display.set_mode((1920, 1080))
+
+font = pygame.font.SysFont("arial", 100, True)
+
+done = False
+while not done:
+    screen.fill((255, 255, 255))
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            done = True
+    screen.blit(
+        font.render("abc", True, (0, 0, 0)),
+        (710, 410)
+    )
+    pygame.display.update()
