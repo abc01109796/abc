@@ -1,2 +1,4 @@
+#pip intall keyboard
+
 import keyboard
 keyboard.press_and_release("a+b+c")
